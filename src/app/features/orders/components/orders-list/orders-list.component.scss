@@ -1,6 +1,17 @@
 :host {
   display: flex;
-  flex: 1;
+  flex: 0 1 auto;
   flex-direction: column;
   position: relative;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+#table {
+  min-height: 575px;
+  min-width: 996px;
+}
+#pagination {
+  min-width: 255px;
+  min-height: 20px;
+  margin: 25px auto;
 }
