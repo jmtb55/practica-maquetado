@@ -1,1 +1,47 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: 'Barlow Bold';
+  src: url('assets/fonts/Barlow-Bold.otf') format("opentype");
+}
+
+@font-face {
+  font-family: 'Barlow Medium';
+  src: url('assets/fonts/Barlow-Medium.otf') format("opentype");
+}
+
+@font-face {
+  font-family: 'Barlow Regular';
+  src: url('assets/fonts/Barlow-Regular.otf') format("opentype");
+}
+
+@font-face {
+  font-family: 'Barlow Light';
+  src: url('assets/fonts/Barlow-Light.otf') format("opentype");
+}
+
+@font-face {
+  font-family: 'Barlow Thin';
+  src: url('assets/fonts/Barlow-Thin.otf') format("opentype");
+}
+
+/*
+In order to fix complex layout issues,
+overflow is hidden on all containers except for the table container.
+
+there will be no more than 1 scrollbar in the screen at any time
+*/
+html
+body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  position: relative;
+  height: 100vh;
+  max-height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.section-wrapper {
+  margin: auto 195px;
+}

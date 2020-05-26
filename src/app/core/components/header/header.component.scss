@@ -1,0 +1,41 @@
+:host {
+  /* Empresas/Azul */
+  background: #221E78;
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 74px;
+}
+
+.menu {
+  max-height: fit-content;
+}
+
+.menu-item {
+  display: inline;
+  font-family: 'Barlow Regular';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-left: 50px;
+  max-width: fit-content;
+  padding: 7px 0;
+}
+
+.menu-item.active {
+  font-family: 'Barlow Bold';
+  border-bottom: 3px solid #FF560A;
+}
+
+.section-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.user {
+  margin-left: auto;
+  cursor: pointer;
+}

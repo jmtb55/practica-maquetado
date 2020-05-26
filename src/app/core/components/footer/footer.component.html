@@ -1,1 +1,28 @@
-<p>footer works!</p>
+<div class="section-wrapper">
+  <div class="reminders-title">RECUERDA</div>
+  <div class="reminders-wrapper">
+    <ng-container
+      [ngTemplateOutlet]="Reminder"
+      [ngTemplateOutletContext]="{ reminder: 'Podrás visualizar los pedidos que tengan hasta 6 meses de antigüedad.' }">
+    </ng-container>
+    <ng-container
+      [ngTemplateOutlet]="Reminder"
+      [ngTemplateOutletContext]="{ reminder: 'Se mostrarán las averías finalizadas dentro de los últimos 7 días.' }">
+    </ng-container>
+  </div>
+</div>
+
+<ng-template #Reminder let-reminder="reminder">
+  <div class="reminder">
+    <div class="reminder-image">
+      <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="4.5" cy="4.5" r="4" stroke="#FF560A"/>
+        <path d="M4.50209 2.98164C4.75857 2.98164 4.9668 2.74809 4.9668 2.46031C4.9668 2.17185 4.75857 1.93819 4.50209 1.93819C4.2452 1.93819 4.03698 2.17173 4.03698 2.46031C4.03698 2.74809 4.2452 2.98164 4.50209 2.98164Z" fill="#FF560A"/>
+        <path d="M4.49822 7.0625C4.7547 7.0625 4.96292 6.82896 4.96292 6.54118C4.96292 6.52573 4.96017 6.51177 4.95915 6.49712L4.9615 6.49712L4.77602 3.97141L4.77459 3.97141C4.76256 3.81132 4.6439 3.68443 4.49812 3.68443C4.35192 3.68443 4.23337 3.81109 4.22133 3.9714L4.2198 3.9714L4.03443 6.49712L4.03688 6.49712C4.03565 6.51177 4.0331 6.52573 4.0331 6.54118C4.0331 6.82896 4.24133 7.0625 4.49822 7.0625Z" fill="#FF560A"/>
+      </svg>
+    </div>
+    <div class="reminder-text">
+      {{reminder}}
+    </div>
+  </div>
+</ng-template>

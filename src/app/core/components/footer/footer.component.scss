@@ -1,0 +1,32 @@
+:host {
+  /* Empresas/Azul */
+  background: #221E78;
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 95px;
+}
+.section-wrapper {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.reminder > div,
+.reminders-title {
+  color: #FFFFFF;
+  font-size: 12px;
+  display: inline-block;
+}
+
+.reminders-title {
+  font-family: 'Barlow Medium';
+  line-height: 20px;
+  letter-spacing: 0.5px;
+}
+
+.reminder > .reminder-text {
+  margin-left: 6px;
+  font-family: 'Barlow Thin';
+  line-height: 16px;
+  letter-spacing: 0.5px;
+}

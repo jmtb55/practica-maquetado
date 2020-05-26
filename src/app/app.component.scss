@@ -1,0 +1,16 @@
+:host {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+}
+
+#root-wrapper {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  position: relative;
+  max-width: 1440px;
+  width: 100%;
+}
